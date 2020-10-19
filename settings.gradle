@@ -1,3 +1,4 @@
+include ':app:number-guessing-game'
 include ':app:currencyconverter'
 include ':app'
 rootProject.name = "Example App"
