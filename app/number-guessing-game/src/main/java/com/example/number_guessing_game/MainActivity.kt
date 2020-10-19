@@ -10,7 +10,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
 
-    fun generateRandomNumber(): Int {
+    private fun generateRandomNumber(): Int {
         return (0..20).random()
     }
 
@@ -28,16 +28,20 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun processUsersGuess (usersGuessInt: Int, randomNumber: Int) {
+    private fun processUsersGuess (usersGuessInt: Int, randomNumber: Int) {
 
         if (usersGuessInt < randomNumber) {
-            Toast.makeText(this, "Higher!", Toast.LENGTH_LONG).show()
+            higherLowerToast("Higher!")
         } else if (usersGuessInt > randomNumber) {
-            Toast.makeText(this, "Lower!", Toast.LENGTH_LONG).show()
+            higherLowerToast("Lower!")
         } else {
-            Toast.makeText(this, "Correct!", Toast.LENGTH_LONG).show()
+            higherLowerToast("Correct! Try again!")
             this.randomNumber = generateRandomNumber()
         }
+    }
+
+    private fun higherLowerToast (message: String) {
+        return Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
