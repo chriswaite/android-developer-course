@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app/currencyconverter" />
             <option value="$PROJECT_DIR$/app/number-guessing-game" />
+            <option value="$PROJECT_DIR$/app/numbershapes" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

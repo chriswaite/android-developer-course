@@ -1,3 +1,4 @@
+include ':app:numbershapes'
 include ':app:number-guessing-game'
 include ':app:currencyconverter'
 include ':app'
